@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-chat app</title>
+    <link rel="stylesheet" href="./css/material.min.css">
+    <link rel="stylesheet" href="./css/material-icons.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+        <header class="mdl-layout__header">
+            <div aria-errormessage="false" role="button" tabindex="0" class="mdl-layout__drawer-button">
+                <i class="material-icons" id="meni_icon">menu</i>
+            </div>
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">G<span class="font-thin">-Chat</span></span>
+
+                <div class="mdl-layout-spacer"></div>
+
+                <div class="material-icons mdl-badge mdl-badge--overlap" id="messages" data-badge="2">message</div>
+                <div class="mdl-tooltip" data-mdl-for="messages">
+                    2 unread messages
+                </div>
+                <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons" style="color: #3f51b5;">more_vert</i>
+                </button>
+                <ul id="menu" class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+                    <li class="mdl-list__item" id="hover-menu">
+                        <a href="#!" class="mdl-list__item-primary-content menu-font">
+                            <i class="material-icons mdl-list__item-icon">settings</i>
+                            Settings
+                        </a>
+                    </li>
+                    <li class="mdl-list__item" id="hover-menu">
+                        <a href="#!" class="mdl-list__item-primary-content menu-font">
+                            <i class="material-icons mdl-list__item-icon">person</i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="mdl-list__item" id="hover-menu">
+                        <a href="#!" class="mdl-list__item-primary-content menu-font">
+                            <i class="material-icons mdl-list__item-icon">open_in_new</i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <div class="mdl-layout__drawer">
+            
+            <div id="avatar">
+                <button id="demo-menu-lower-left user-avatar" class="mdl-button mdl-js-button mdl-button--icon">
+                    <img src="./img/avatar1.png" id="circle-img" alt="avatar">
+                </button>
+                <div class="user-name">
+                    <span class="title">Peret John</span>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <nav class="mdl-navigation">
+                <ul class="demo-list-two mdl-list">
+                    <li class="mdl-list__item mdl-list__item--two-line">
+                        <span class="mdl-list__item-primary-content">
+                            <img class="mdl-list__item-avatar" src="./img/avatar-10.png" alt="avatar">
+                            <a href="#!" class="fname">Peret John</a>
+                            <span class="mdl-list__item-sub-title">Online</span>
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <span class="mdl-list__item-secondary-info" style="color: #bfbfbf;">Status</span>
+                            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="status-1">
+                                <input type="radio" id="status-1" class="mdl-radio__button" name="options" value="1" checked />
+                            </label>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--two-line">
+                        <span class="mdl-list__item-primary-content">
+                            <img class="mdl-list__item-avatar" src="./img/avatar-11.png" alt="avatar">
+                            <a href="!#" class="fname">Helen Paul</a>
+                            <span class="mdl-list__item-sub-title">Offline</span>
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="status-2">
+                                <input type="radio" id="status-2" class="mdl-radio__button" name="options" value="1" />
+                            </label>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--two-line">
+                        <span class="mdl-list__item-primary-content">
+                            <img class="mdl-list__item-avatar" src="./img/avatar-10.png" alt="avatar">
+                            <a href="#!" class="fname">Linda Odenkirk</a>
+                            <span class="mdl-list__item-sub-title">Offline</span>
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="status-3">
+                                <input type="radio" id="status-3" class="mdl-radio__button" name="options" value="1" />
+                            </label>
+                        </span>
+                    </li>
+                    <li class="mdl-list__item mdl-list__item--two-line">
+                        <span class="mdl-list__item-primary-content">
+                            <img class="mdl-list__item-avatar" src="./img/avatar-11.png" alt="avatar">
+                            <a href="!#" class="fname">Mary Sanchest</a>
+                            <span class="mdl-list__item-sub-title">Offline</span>
+                        </span>
+                        <span class="mdl-list__item-secondary-content">
+                            <label class="demo-list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="status-2">
+                                <input type="radio" id="status-2" class="mdl-radio__button" name="options" value="1" />
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="container">
+                    <div class="demo-card-wide mdl-card mdl-shadow--1dp">
+                       
+                    </div>
+
+                    <div class="fab">
+                        <button id="add-member" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
+                    <div class="mdl-tooltip" data-mdl-for="add-member">
+                        Add new member
+                    </div>
+                </div>
+
+                <footer class="mdl-mini-footer">
+                      <li class="mdl-list__item" id="sendChat">
+                          <span class="mdl-list__item-primary-content">
+                            <input type="text" name="chat" id="chat" placeholder="Type a message...">
+                          </span>
+                          <span class="mdl-list__item-secondary-content">
+                            <button type="submit" style="height: 40px; width: 50%; background-color: #fff; color: #3f51b5; border-radius: .7rem;"
+                                class="mdl-list__item-secondary-action mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored">
+                                <i class="material-icons">send</i>
+                            </button>
+                          </span>
+                      </li>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/material.min.js"></script>
+</body>
+</html>
